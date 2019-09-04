@@ -1,8 +1,12 @@
-/* a custom scrollbar */
+/* a custom scrollbar / works only in chrome/safari */
 ::-webkit-scrollbar {
+    width: 20px;
 
 }
+::-webkit-scrollbar-track { 
+    background: red;
 
-::-webkit-scrollbar-track {
-
+}
+::-webkit-scrollbar-thumb {
+    background: blue;
 }
