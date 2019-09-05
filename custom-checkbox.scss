@@ -8,6 +8,7 @@ requires following html structure
 
 */
 .check-container {
+    
     display: block;
     position: relative;
     padding-left: 35px;
@@ -30,7 +31,7 @@ requires following html structure
     }
 
     &:hover input ~ .checkmark {
-        background-color: #ccc;
+        background-color: #fff;
     }
 
     input:checked ~ .checkmark:after {
@@ -48,18 +49,15 @@ requires following html structure
             content: "";
             position: absolute;
             display: none;
+            left: 9px;
+            top: 6px;
+            width: 6px;
+            height: 12px;
+            border: solid orangered;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
         }
-    }
-
-    .checkmark:after {
-        left: 9px;
-        top: 6px;
-        width: 6px;
-        height: 12px;
-        border: solid orangered;
-        border-width: 0 3px 3px 0;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
     }
 }
