@@ -2,18 +2,15 @@
 
 ::-webkit-scrollbar {
     width: 20px;
-
 }
 ::-webkit-scrollbar-track { 
     background: orangered;
-
 }
 ::-webkit-scrollbar-thumb {
     background: darkblue;
 }
 
 /* for firefox */
-
 html {
     scrollbar-width: thin;  //  auto - thin - none
     scrollbar-color: orangered darkblue; // thumb color - track color
