@@ -19,7 +19,7 @@ requires following html structure
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: #fff;
+    color: #202020;
     text-align: left;
    
     input { 
@@ -31,7 +31,7 @@ requires following html structure
     }
 
     &:hover input ~ .checkmark {
-        background-color: #fff;
+        background-color: rgba(darkblue,.8);
     }
 
     input:checked ~ .checkmark:after {
@@ -49,8 +49,8 @@ requires following html structure
             content: "";
             position: absolute;
             display: none;
-            left: 9px;
-            top: 6px;
+            left: 8px;
+            top: 3px;
             width: 6px;
             height: 12px;
             border: solid orangered;

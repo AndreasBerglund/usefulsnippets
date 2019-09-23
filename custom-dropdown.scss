@@ -1,1 +1,66 @@
 // a custom dropdown from select
+$background-color: darkblue;
+$selected-color: orangered;
+
+.custom-dropdown {
+
+    position: relative;
+
+    select {
+        display: none;    
+    }
+
+    .select-selected {
+        background-color: $background-color;
+        color: #ffffff;
+        padding: 18px 21px;
+        border: 1px solid transparent;
+        border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        cursor: pointer;
+
+        &:after {
+            position: absolute;
+            content: "";
+            top: 24px;
+            right: 18px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: #fff transparent transparent transparent;
+        }
+
+        &.select-arrow-active:after {
+            border-color: transparent transparent #fff transparent;
+            top: 16px;
+        }
+    }
+
+.select-items {
+    position: absolute;
+    background-color: $selected-color;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    div {
+        background-color: $background-color;
+        color: #ffffff;
+        padding: 18px 21px;
+        border: 1px solid transparent;
+        border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        cursor: pointer;
+       
+        &:hover, .same-as-selected {
+            background-color:cyan;
+        }
+    }
+
+  }
+
+  .select-hide {
+    display: none;
+  }
+
+
+}   
