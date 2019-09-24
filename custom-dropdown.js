@@ -37,6 +37,10 @@
                     
                     if ($option.html() == $new_option.html()) {
                         $select.prop('selectedIndex', j );
+                        $select.trigger('change');
+
+                        selectUpdate($select);
+
                         $new_option_selected.html($new_option.html());
                         $new_option_list.find('div').removeClass('same-as-selected');
                         $new_option.addClass('same-as-selected');
@@ -66,5 +70,11 @@
     }
 
     $(document).on('click', closeAllCustomDropdown);
+
+    function selectUpdate($element) {
+        //things to do when select changed:
+        console.log($element.val());
+    }
+
 
 })(jQuery);
