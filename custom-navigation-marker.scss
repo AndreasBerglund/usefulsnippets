@@ -1,0 +1,30 @@
+nav {
+  ul {
+    position: relative;
+    border: 1px solid red;
+    z-index: 1;
+
+    li {
+      list-style: none;
+      display: inline-block;
+
+      a {
+        background: transparent;
+        display: block;
+        padding: 18px 21px;
+        text-decoration: none;
+
+        &:hover {
+          background: rgba(cyan, 0.3);
+        }
+      }
+    }
+  }
+
+  .marker {
+    display: block;
+    background: cyan;
+    position: absolute;
+    opacity: 0;
+  }
+}

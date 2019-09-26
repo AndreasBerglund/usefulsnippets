@@ -1,0 +1,28 @@
+nav ul {
+  position: relative;
+  border: 1px solid red;
+  z-index: 1;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  background: transparent;
+  display: block;
+  padding: 18px 21px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: rgba(0, 255, 255, 0.3);
+}
+
+nav .marker {
+  display: block;
+  background: cyan;
+  position: absolute;
+  opacity: 0;
+}
