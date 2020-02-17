@@ -7,11 +7,12 @@
         
     });
 
-    $('.modal-outer').click(function(e){
+    $('.modal-inner').click(function(e){
 
-        if(e.target != this) return;
-        $(this).removeClass('active');
+        if (e.target != this) { return false; }
+        $(this).parent().removeClass('active');
         $('body').removeClass('no-scroll');
+
     })
 
 })(jQuery);
